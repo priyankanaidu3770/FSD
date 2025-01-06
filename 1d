@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .thumbnail{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 25%;
+           
+        }
+        a:hover{
+        text-decoration: underline;
+        }
+    </style></head>
+<body>
+    <div class="thumbnail">
+        <a href="/images/pexels-esralogy-29463848.jpg" target="_blank">
+            <img src="/home/vitcse/Downloads/dha.jpeg" alt="Me">
+        </a>
+        <p><a href="https://www.google.co.in/" target="_blank"></a></p>
+    </div>
+    <div class="thumbnail">
+        <a href="images/pexels-isaak-cole-2147859173-29798552.jpg" target="_blank">
+            <img src="/home/vitcse/Downloads/dha2.jpg" alt="Friend">
+        </a>
+        <p><a href="https://www.google.co.in/" target="_blank"></a></p>
+    </div>
+    <div class="thumbnail">
+        <a href="/images/pexels-maximilian-orlowsky-515733-30008021.jpg" target="_blank">
+            <img src="/home/vitcse/Downloads/dha3.webp" alt="Friend">
+        </a>
+        <p><a href="https://www.google.co.in/" target="_blank"></a></p>
+    </div>
+    <div class="thumbnail">
+        <a href="/images/pexels-seyma-d-152665775-29663700.jpg" target="_blank">
+            <img src="/home/vitcse/Downloads/dha4.jpeg" alt="Friend">
+        </a>
+        <p><a href="https://www.google.co.in/" target="_blank"></a></p>
+    </div>
+
+    <div class="thumbnail">
+        <a href="/images/pexels-seyma-d-152665775-29663700.jpg" target="_blank">
+            <img src="/home/vitcse/Downloads/dha5.webp" alt="Friend">
+        </a>
+        <p><a href="https://www.google.co.in/" target="_blank"></a></p>
+    </div>
+</body>
+</html>
