@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 550px;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: gray;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #f8f8f8;
+      border-radius: 8px;
+    }
+
+    table tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+    table tr:last-child {
+      border-bottom: none;
+    }
+
+    table td {
+      padding: 12px 10px;
+      vertical-align: middle;
+    }
+
+    table td:first-child {
+      width: 35%;
+      font-weight: bold;
+      text-align: right;
+      padding-right: 20px;
+      background: #e9ecef;
+    }
+
+    table td:last-child {
+      text-align: left;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 95%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fff;
+    }
+
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      width: 120px;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .buttons .submit {
+      background-color: #007bff;
+    }
+
+    .buttons .reset {
+      background-color: #dc3545;
+    }
+
+    .buttons button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <h2>Fill Your Details</h2>
+    <form>
+      <table>
+        <tr>
+          <td>Full Name:</td>
+          <td><input type="text" placeholder="Enter your full name" required></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" placeholder="Enter your password" required></td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td><input type="number" placeholder="Enter your age"></td>
+        </tr>
+        <tr>
+          <td>Date of Birth:</td>
+          <td><input type="date"></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="Male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="Female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="Other" id="other">
+            <label for="other">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Hobbies:</td>
+          <td>
+            <input type="checkbox" value="Reading" id="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" value="Sports" id="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" value="Traveling" id="traveling">
+            <label for="traveling">Traveling</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Country:</td>
+          <td>
+            <select>
+              <option value="" disabled selected>Select your country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="Australia">Australia</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>About Yourself:</td>
+          <td><textarea placeholder="Write about yourself..."></textarea></td>
+        </tr>
+        <tr class="buttons">
+          <td colspan="2" style="text-align: center;">
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
