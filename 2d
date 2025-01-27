@@ -1,8 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames Example</title>
+</head>
+<frameset rows="70%, 10%, 20%" border="10">
+    <frame src="image.html" name="imageFrame">
+    <frame src="paragraph.html" name="paragraphFrame">
+    <frame src="hyperlink.html" name="hyperlinkFrame">
+    <noframes>
         <body>
-<iframe src="https://codingbytes.com/wp-content/uploads/2022/03/full-stack-web-development.jpg" name="fsd" heigt="500" width="100%" title="2d"></iframe>
-<p>this is the sample paragraph displayed in the second frame.Frames allow dividing a page into sections.each capable of loading different content</p>
-<p><a href="https://github.com/" target="iframe_a"> visit github.com</a></p>
+            <p>Your browser does not support frames. Please update to a modern browser to view this content.</p>
         </body>
-        </html>
+    </noframes>
+</frameset>
+</html>
+
+////////////image.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames Example</title>
+</head>
+<frameset rows="70%, 10%, 20%" border="10">
+    <frame src="image.html" name="imageFrame">
+    <frame src="paragraph.html" name="paragraphFrame">
+    <frame src="hyperlink.html" name="hyperlinkFrame">
+    <noframes>
+        <body>
+            <p>Your browser does not support frames. Please update to a modern browser to view this content.</p>
+        </body>
+    </noframes>
+</frameset>
+</html>
+
+//////paragraph.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Frame</title>
+</head>
+<body>
+    <p>This is a sample paragraph displayed in the second frame. Frames allow dividing a page into sections, each capable of loading different content.</p>
+</body>
+</html>
+
+////////hyperlink.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink Frame</title>
+</head>
+<body>
+    <a href="https://www.google.com" target="_blank">Visit Example Website</a>
+</body>
+</html>
+
+
