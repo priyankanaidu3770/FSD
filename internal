@@ -1,0 +1,26 @@
+const { MongoClient } = require("mongodb"); 
+const uri = "mongodb+srv://madtrigger456_db_user:chaitra%400312@cluster0.mk7kxbe.mongodb.net/?appName=Cluster0";
+
+const client = new MongoClient(uri); 
+async function run() { 
+ try { 
+ await client.connect(); 
+ console.log("Connected to MongoDB Atlas"); 
+ const db = client.db("schoolDB"); // This creates a reference to a database 
+ const students = db.collection("students"); // Creates reference to collection 
+ await db.createCollection("teachers"); 
+ console.log("'teachers' collection created in 'schoolDB'"); 
+ await students.insertOne({ name: "Alice", grade: "A" }); 
+ console.log( "Inserted a document into 'students' collection"); 
+  await db.collection("teachers").drop(); 
+ console.log(" 'teachers' collection dropped"); 
+  await db.dropDatabase(); 
+ console.log(" 'schoolDB' database dropped");
+ } catch (error) { 
+  console.error("Error:", error); 
+  } finally { 
+  await client.close(); 
+  console.log(" Connection closed"); 
+ } 
+} 
+run();
