@@ -1,0 +1,31 @@
+const express = require("express");
+const app = express();
+const PORT = 3000;
+
+// 1. Simple Route
+app.get("/", (req, res) => {
+    res.send("Welcome to ExpressJS!");
+});
+
+// 2. Route Parameter Example
+app.get("/user/:name", (req, res) => {
+    const name = req.params.name;
+    res.send(`Hello ${name}, this is a route parameter example.`);
+});
+
+// 3. Query Parameter Example
+// Example: http://localhost:3000/search?item=phone
+app.get("/search", (req, res) => {
+    const item = req.query.item;
+    res.send(`You searched for: ${item}`);
+});
+
+// 4. URL Building / Redirect Example
+app.get("/go-to-home", (req, res) => {
+    res.redirect("/");
+});
+
+// Start Server
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
